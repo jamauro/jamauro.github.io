@@ -1,0 +1,18 @@
+<div class="portfolio">
+  <ul class="works">
+    {% for post in site.posts %}
+      <li class="col-md-6">
+        <a href="{{ post.url }}">
+          {% if post.image contains page.title %}
+          <div class="currentpost">
+            <img src="{{ post.image }}" />
+          </div>
+          {% else %}
+            <img src="{{ post.image }}" />
+          {% endif %}
+          <!-- <h3>{{ post.title }}</h3> -->
+        </a>
+     </li>
+    {% endfor %}
+  </ul>
+</div>

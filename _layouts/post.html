@@ -1,9 +1,22 @@
 ---
 layout: default
 ---
-<h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
 
-<div class="post">
-{{ content }}
+<div class="container-fluid">
+  <div class="posttitle">
+    <h1 class="{{ page.title }}">{{ page.title }}</h1>
+    <h5>{{ page.subtitle }}</h5>
+    <!-- <p class="meta">{{ page.date | date_to_string }}</p> -->
+  </div>
+  <div class="post">
+  {{ content }}
+  </div>
+
+  <div class="divider">
+    <img src="/img/divider.svg"/>
+  </div>
+
+  <div class="row">
+    {% include works.html %}
+  </div>
 </div>

@@ -9,36 +9,107 @@
         <!-- syntax highlighting CSS -->
         <link rel="stylesheet" href="/css/syntax.css">
 
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/main.css">
+        <!-- Custom CSS
+        <link rel="stylesheet" href="/css/main.css"> -->
+
+        <!-- SCSS, baby -->
+        <link rel="stylesheet" href="/css/screen.css">
+
+        <!-- Google fonts -->
+        <link href='http://fonts.googleapis.com/css?family=PT+Mono' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Oswald:300,400,700' rel='stylesheet' type='text/css'>
+
+        <!-- animate CSS -->
+        <link rel="stylesheet" href="/css/animate.css">
 
     </head>
     <body>
 
-        <div class="site">
-          <div class="header">
-            <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-            <a class="extra" href="/">home</a>
-          </div>
-
-          {{ content }}
-
-          <div class="footer">
-            <div class="contact">
-              <p>
-                Your Name<br />
-                What You Are<br />
-                you@example.com
-              </p>
+      <div class="container-fluid animated fadeIn">
+        <header>
+          {% if page.path contains '_posts' %}
+            <div class="jam pull-left">
+              <a href="/">
+                <svg width="46px" height="46px" viewBox="0 0 46 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+                    <!-- Generator: Sketch 3.0 (7573) - http://www.bohemiancoding.com/sketch -->
+                    <title>disc</title>
+                    <description>Created with Sketch.</description>
+                    <defs></defs>
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+                        <g id="Artboard-1-copy-3" sketch:type="MSArtboardGroup" transform="translate(-250.000000, -283.000000)">
+                            <g id="Website" sketch:type="MSLayerGroup" transform="translate(24.000000, 0.000000)">
+                                <g id="Shape" transform="translate(226.000000, 283.000000)" sketch:type="MSShapeGroup">
+                                    <path d="M23,0 C10.2977273,0 0,10.2977273 0,23 C0,35.7027955 10.2977273,46 23,46 C35.7027955,46 46,35.7027955 46,23 C46,10.2977273 35.7027955,0 23,0 L23,0 Z M23,41.8181818 C12.6071364,41.8181818 4.18181818,33.3928636 4.18181818,23 C4.18181818,12.6071364 12.6071364,4.18181818 23,4.18181818 C33.3928636,4.18181818 41.8181818,12.6071364 41.8181818,23 C41.8181818,33.3928636 33.3928636,41.8181818 23,41.8181818 L23,41.8181818 Z M23,14.6363636 C18.3811818,14.6363636 14.6363636,18.3811818 14.6363636,23 C14.6363636,27.6193409 18.3811818,31.3636364 23,31.3636364 C27.6193409,31.3636364 31.3636364,27.6193409 31.3636364,23 C31.3636364,18.3811818 27.6193409,14.6363636 23,14.6363636 L23,14.6363636 Z M23,27.1818182 C20.6905909,27.1818182 18.8181818,25.3094091 18.8181818,23 C18.8181818,20.6905909 20.6905909,18.8181818 23,18.8181818 C25.3094091,18.8181818 27.1818182,20.6905909 27.1818182,23 C27.1818182,25.3094091 25.3094091,27.1818182 23,27.1818182 L23,27.1818182 Z" id="disc" fill="#D5DCE1"></path>
+                                    <path d="M20.2595552,9.26809683 C14.847224,10.3421848 10.5580625,14.5362005 9.34503609,19.8971785" id="glare" stroke="#D5DCE1" stroke-width="3" stroke-linecap="round"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+              </a>
             </div>
-            <div class="contact">
-              <p>
-                <a href="https://github.com/yourusername">github.com/yourusername</a><br />
-                <a href="https://twitter.com/yourusername">twitter.com/yourusername</a><br />
-              </p>
+            <div class="email pull-right">
+              <a href="mailto:jamauro@gmail.com" class="btn btn-default">email me</a>
             </div>
+          {% else %}
+            <div class="email pull-right">
+              <a href="mailto:jamauro@gmail.com" class="btn btn-default">email me</a>
+            </div>
+          {% endif %}
+        </header>
+      </div>
+
+      {{ content }}
+
+      <div class="contact">
+        <div class="container-fluid">
+           <div class="row">
+              <div class ="sayhi col-md-12 center-block">
+                <p>Shoot me an email and </br> let's chat about your project</p>
+                <button type="button" class="btn btn-primary">say hi</button>
+              </div>
           </div>
         </div>
+      </div>
 
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12 center-block">
+            <footer>
+              <div class="icons">
+                <a class="links" id="twitter" href="http://twitter.com/johnamauro">@johnamauro</a>
+                <a class="links" id="dribbble" href="http://dribbble.com/johnamauro">dribbble.com/johnamauro</a>
+                <a class="links" id="email" href="mailto:jamauro@gmail.com">mailto: jamauro@gmail.com</a>
+              </div>
+              <p>© JAM 2014</p>
+            </footer>
+          </div>
+        </div>
+      </div>
+      <script>
+        var current_frame = 0;
+        var total_frames = 90;
+        var path = document.querySelector('.squigglepath');
+        var length = path.getTotalLength();
+        var handle = 0;
+
+        path.style.strokeDasharray = length + ' ' + length;
+        path.style.strokeDashoffset = length;
+
+        var draw = function() {
+           var progress = current_frame/total_frames;
+           if (progress >= 0.50000000000001) {
+             path.style.stroke ='#fafafb';
+             window.cancelAnimationFrame(handle);
+           } else {
+             current_frame++;
+             path.style.strokeDashoffset = Math.floor(length * (1 - progress));
+             handle = window.requestAnimationFrame(draw);
+           }
+        };
+        draw();
+      </script>
     </body>
 </html>
+
+

@@ -1,0 +1,292 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+
+
+@import "compass/reset";
+@import "compass/css3";
+@import "bootstrap";
+
+$blue: #30B9FF;
+$lightgray: #C4CED5;
+$lightergray: #D5DCE1;
+
+
+/* ================================================================
+   html, body, section, styles, footer
+   ================================================================ */
+
+header {
+  margin: 58px 0;
+  overflow: hidden;
+  .jam {
+    svg:hover #disc {
+      fill: $blue;
+    }
+    svg:hover #glare {
+      stroke: $blue;
+    }
+  }
+}
+body {
+  background: #fff;
+  font: 16px 'PT Mono';
+  color: #222244;
+}
+
+.container-fluid {
+  -webkit-animation-delay: 1.9s;
+  @media (min-width: 1200px) {
+    width: 970px;
+  }
+}
+
+.btn {
+  font-size: 16px;
+  border-radius: 8px;
+  border: 2px solid;
+  padding: 10px 20px;
+  &.btn-primary {
+    color: #fff;
+    border-color: #fff;
+    background: none;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    height: 52px;
+    width: 168px;
+  }
+  &.btn-default {
+    color: $lightergray;
+    border-color: $lightergray;
+  }
+    &:hover {
+      color: $blue;
+      border-color: $blue;
+      background: #fff;
+    }
+    &:active {
+      color: #fff;
+      border-color: $blue;
+      background: $blue;
+    }
+}
+
+
+.btn:hover {
+  color: $blue;
+  border-color: $blue;
+  background: #fff;
+}
+
+.bg {
+  width: 100%;
+  #Layer_1 {
+    position: absolute;
+    width: 100%;
+    top: 58px;
+    z-index: -9999;
+  }
+}
+
+.intro {
+  margin: 184px 0 304px 0;
+  -webkit-animation-delay: 2.1s;
+  .logo {
+    margin-bottom: 18px;
+    -webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: 1s;
+    /*spin the record */
+    &:hover {
+      -webkit-animation-name: rotate;
+      -webkit-animation-duration: 1.304s;
+      -webkit-animation-iteration-count: infinite;
+      -webkit-animation-timing-function: linear;
+
+      -moz-animation-name: rotate;
+      -moz-animation-duration: 1.304s;
+      -moz-animation-iteration-count: infinite;
+      -moz-animation-timing-function: linear;
+    }
+  }
+}
+
+@-webkit-keyframes rotate {
+  from {-webkit-transform: rotate(0deg);}
+  to {-webkit-transform: rotate(360deg);}
+}
+
+.portfolio {
+  overflow: hidden;
+  padding-bottom: 150px;
+  .currentpost {
+    opacity: 0.5;
+  }
+  img {
+    width: 455px;
+    margin-bottom: 90px;
+  }
+}
+
+.quote {
+  margin: 0px 0 208px 0;
+  text-align: center;
+  .line {
+    background: $blue;
+    width: 145px;
+    height: 3px;
+    margin-top: 44px;
+    margin-bottom: 40px;
+  }
+}
+
+.contact {
+  background: $blue;
+  text-align: center;
+  height: 398px;
+  p {
+    color: #fff;
+    margin-top: 138px;
+    margin-bottom: 32px;
+    line-height: 1.625;
+  }
+}
+
+footer {
+  height: 234px;
+  text-align: center;
+  color: $lightergray;
+  p {
+    letter-spacing: 0.25em;
+  }
+}
+
+.icons {
+  padding-top: 5.625em;
+  margin-bottom: 1.625em;
+}
+
+.links {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  color: transparent;
+  background:transparent url("../img/social_v3.svg") 0 0;
+}
+
+#twitter {
+  background-position: 0 0;
+  margin-right: 20px;
+  width: 26px;
+  &:hover {
+    background-position: 0 -28px;
+    color: transparent;
+  }
+}
+
+#dribbble {
+  background-position: -74px 0;
+  margin-right: 20px;
+  &:hover{
+    background-position: -74px -28px;
+    color: transparent;
+  }
+}
+
+#email {
+  background-position: -278px 0;
+  width: 25px;
+  &:hover {
+    background-position: -278px -28px;
+    color: transparent;
+  }
+}
+
+/* ================================================================
+   post
+   ================================================================ */
+
+.posttitle {
+  margin: 100px auto;
+  text-align: center;
+}
+
+.post{
+  width: 100%;
+  &.imgbig {
+    width: 940px;
+  }
+  img {
+    width: 100%;
+    margin: 1.625em auto;
+  }
+  p {
+    width: 750px;
+    line-height: 1.625;
+    margin: 1.625em auto;
+  }
+}
+
+.divider {
+  text-align: center;
+  margin: 100px auto 180px auto;
+}
+
+/* ================================================================
+   typography
+   ================================================================ */
+
+h1 {
+  font-size: 6.875em;
+  text-transform: uppercase;
+  font-family: 'Oswald';
+  font-weight: 300;
+  &.healthy {
+    color: #FFA300;
+  }
+  &.feedme {
+    color: #0BA3F8;
+  }
+  &.scores {
+    color: #00D872;
+  }
+}
+
+h2 {
+  font-size: 1.625em;
+}
+
+h5 {
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  margin: 2px 0;
+  padding-left: 0.25em;
+  color: $lightgray;
+  &.name {
+    a {
+      color: #222244;
+    }
+  }
+
+  &.title {
+    color: #B4C0C9;
+  }
+}
+
+h6 {
+  font-size: 16px;
+  color: $lightgray;
+}
+
+a {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+
+
+
