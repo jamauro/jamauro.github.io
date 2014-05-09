@@ -29,6 +29,11 @@ header {
       stroke: $blue;
     }
   }
+  .email {
+    svg:hover #mail {
+      fill: $blue;
+    }
+  }
 }
 body {
   background: #fff;
@@ -124,7 +129,7 @@ body {
     opacity: 0.5;
   }
   img {
-    width: 455px;
+    width: 100%;
     margin-bottom: 90px;
   }
 }
@@ -223,7 +228,7 @@ footer {
     margin: 1.625em auto;
   }
   p {
-    width: 750px;
+    width: 70%;
     line-height: 1.625;
     margin: 1.625em auto;
   }
@@ -288,5 +293,25 @@ a {
 }
 
 
+/* ================================================================
+   media queries
+   ================================================================ */
 
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (max-width : 768px) {
+  .post {
+    p {
+      width: 90%;
+    }
+  }
+}
 
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (max-width : 991px) {
+  .container-fluid {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

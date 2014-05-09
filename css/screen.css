@@ -7976,33 +7976,37 @@ header .jam svg:hover #disc {
 header .jam svg:hover #glare {
   stroke: #30b9ff;
 }
-
 /* line 33, ../_sass/screen.scss */
+header .email svg:hover #mail {
+  fill: #30b9ff;
+}
+
+/* line 38, ../_sass/screen.scss */
 body {
   background: #fff;
   font: 16px 'PT Mono';
   color: #222244;
 }
 
-/* line 39, ../_sass/screen.scss */
+/* line 44, ../_sass/screen.scss */
 .container-fluid {
   -webkit-animation-delay: 1.9s;
 }
 @media (min-width: 1200px) {
-  /* line 39, ../_sass/screen.scss */
+  /* line 44, ../_sass/screen.scss */
   .container-fluid {
     width: 970px;
   }
 }
 
-/* line 46, ../_sass/screen.scss */
+/* line 51, ../_sass/screen.scss */
 .btn {
   font-size: 16px;
   border-radius: 8px;
   border: 2px solid;
   padding: 10px 20px;
 }
-/* line 51, ../_sass/screen.scss */
+/* line 56, ../_sass/screen.scss */
 .btn.btn-primary {
   color: #fff;
   border-color: #fff;
@@ -8012,36 +8016,36 @@ body {
   height: 52px;
   width: 168px;
 }
-/* line 60, ../_sass/screen.scss */
+/* line 65, ../_sass/screen.scss */
 .btn.btn-default {
   color: #d5dce1;
   border-color: #d5dce1;
 }
-/* line 64, ../_sass/screen.scss */
+/* line 69, ../_sass/screen.scss */
 .btn:hover {
   color: #30b9ff;
   border-color: #30b9ff;
   background: #fff;
 }
-/* line 69, ../_sass/screen.scss */
+/* line 74, ../_sass/screen.scss */
 .btn:active {
   color: #fff;
   border-color: #30b9ff;
   background: #30b9ff;
 }
 
-/* line 77, ../_sass/screen.scss */
+/* line 82, ../_sass/screen.scss */
 .btn:hover {
   color: #30b9ff;
   border-color: #30b9ff;
   background: #fff;
 }
 
-/* line 83, ../_sass/screen.scss */
+/* line 88, ../_sass/screen.scss */
 .bg {
   width: 100%;
 }
-/* line 85, ../_sass/screen.scss */
+/* line 90, ../_sass/screen.scss */
 .bg #Layer_1 {
   position: absolute;
   width: 100%;
@@ -8049,19 +8053,19 @@ body {
   z-index: -9999;
 }
 
-/* line 93, ../_sass/screen.scss */
+/* line 98, ../_sass/screen.scss */
 .intro {
   margin: 184px 0 304px 0;
   -webkit-animation-delay: 2.1s;
 }
-/* line 96, ../_sass/screen.scss */
+/* line 101, ../_sass/screen.scss */
 .intro .logo {
   margin-bottom: 18px;
   -webkit-transition-property: -webkit-transform;
   -webkit-transition-duration: 1s;
   /*spin the record */
 }
-/* line 101, ../_sass/screen.scss */
+/* line 106, ../_sass/screen.scss */
 .intro .logo:hover {
   -webkit-animation-name: rotate;
   -webkit-animation-duration: 1.304s;
@@ -8074,38 +8078,38 @@ body {
 }
 
 @-webkit-keyframes rotate {
-  /* line 116, ../_sass/screen.scss */
+  /* line 121, ../_sass/screen.scss */
   from {
     -webkit-transform: rotate(0deg);
   }
 
-  /* line 117, ../_sass/screen.scss */
+  /* line 122, ../_sass/screen.scss */
   to {
     -webkit-transform: rotate(360deg);
   }
 }
 
-/* line 120, ../_sass/screen.scss */
+/* line 125, ../_sass/screen.scss */
 .portfolio {
   overflow: hidden;
   padding-bottom: 150px;
 }
-/* line 123, ../_sass/screen.scss */
+/* line 128, ../_sass/screen.scss */
 .portfolio .currentpost {
   opacity: 0.5;
 }
-/* line 126, ../_sass/screen.scss */
+/* line 131, ../_sass/screen.scss */
 .portfolio img {
-  width: 455px;
+  width: 100%;
   margin-bottom: 90px;
 }
 
-/* line 132, ../_sass/screen.scss */
+/* line 137, ../_sass/screen.scss */
 .quote {
   margin: 0px 0 208px 0;
   text-align: center;
 }
-/* line 135, ../_sass/screen.scss */
+/* line 140, ../_sass/screen.scss */
 .quote .line {
   background: #30b9ff;
   width: 145px;
@@ -8114,13 +8118,13 @@ body {
   margin-bottom: 40px;
 }
 
-/* line 144, ../_sass/screen.scss */
+/* line 149, ../_sass/screen.scss */
 .contact {
   background: #30b9ff;
   text-align: center;
   height: 398px;
 }
-/* line 148, ../_sass/screen.scss */
+/* line 153, ../_sass/screen.scss */
 .contact p {
   color: #fff;
   margin-top: 138px;
@@ -8128,24 +8132,24 @@ body {
   line-height: 1.625;
 }
 
-/* line 156, ../_sass/screen.scss */
+/* line 161, ../_sass/screen.scss */
 footer {
   height: 234px;
   text-align: center;
   color: #d5dce1;
 }
-/* line 160, ../_sass/screen.scss */
+/* line 165, ../_sass/screen.scss */
 footer p {
   letter-spacing: 0.25em;
 }
 
-/* line 165, ../_sass/screen.scss */
+/* line 170, ../_sass/screen.scss */
 .icons {
   padding-top: 5.625em;
   margin-bottom: 1.625em;
 }
 
-/* line 170, ../_sass/screen.scss */
+/* line 175, ../_sass/screen.scss */
 .links {
   display: inline-block;
   width: 20px;
@@ -8155,35 +8159,35 @@ footer p {
   background: transparent url("../img/social_v3.svg") 0 0;
 }
 
-/* line 179, ../_sass/screen.scss */
+/* line 184, ../_sass/screen.scss */
 #twitter {
   background-position: 0 0;
   margin-right: 20px;
   width: 26px;
 }
-/* line 183, ../_sass/screen.scss */
+/* line 188, ../_sass/screen.scss */
 #twitter:hover {
   background-position: 0 -28px;
   color: transparent;
 }
 
-/* line 189, ../_sass/screen.scss */
+/* line 194, ../_sass/screen.scss */
 #dribbble {
   background-position: -74px 0;
   margin-right: 20px;
 }
-/* line 192, ../_sass/screen.scss */
+/* line 197, ../_sass/screen.scss */
 #dribbble:hover {
   background-position: -74px -28px;
   color: transparent;
 }
 
-/* line 198, ../_sass/screen.scss */
+/* line 203, ../_sass/screen.scss */
 #email {
   background-position: -278px 0;
   width: 25px;
 }
-/* line 201, ../_sass/screen.scss */
+/* line 206, ../_sass/screen.scss */
 #email:hover {
   background-position: -278px -28px;
   color: transparent;
@@ -8192,33 +8196,33 @@ footer p {
 /* ================================================================
    post
    ================================================================ */
-/* line 211, ../_sass/screen.scss */
+/* line 216, ../_sass/screen.scss */
 .posttitle {
   margin: 100px auto;
   text-align: center;
 }
 
-/* line 216, ../_sass/screen.scss */
+/* line 221, ../_sass/screen.scss */
 .post {
   width: 100%;
 }
-/* line 218, ../_sass/screen.scss */
+/* line 223, ../_sass/screen.scss */
 .post.imgbig {
   width: 940px;
 }
-/* line 221, ../_sass/screen.scss */
+/* line 226, ../_sass/screen.scss */
 .post img {
   width: 100%;
   margin: 1.625em auto;
 }
-/* line 225, ../_sass/screen.scss */
+/* line 230, ../_sass/screen.scss */
 .post p {
-  width: 750px;
+  width: 70%;
   line-height: 1.625;
   margin: 1.625em auto;
 }
 
-/* line 232, ../_sass/screen.scss */
+/* line 237, ../_sass/screen.scss */
 .divider {
   text-align: center;
   margin: 100px auto 180px auto;
@@ -8227,32 +8231,32 @@ footer p {
 /* ================================================================
    typography
    ================================================================ */
-/* line 241, ../_sass/screen.scss */
+/* line 246, ../_sass/screen.scss */
 h1 {
   font-size: 6.875em;
   text-transform: uppercase;
   font-family: 'Oswald';
   font-weight: 300;
 }
-/* line 246, ../_sass/screen.scss */
+/* line 251, ../_sass/screen.scss */
 h1.healthy {
   color: #FFA300;
 }
-/* line 249, ../_sass/screen.scss */
+/* line 254, ../_sass/screen.scss */
 h1.feedme {
   color: #0BA3F8;
 }
-/* line 252, ../_sass/screen.scss */
+/* line 257, ../_sass/screen.scss */
 h1.scores {
   color: #00D872;
 }
 
-/* line 257, ../_sass/screen.scss */
+/* line 262, ../_sass/screen.scss */
 h2 {
   font-size: 1.625em;
 }
 
-/* line 261, ../_sass/screen.scss */
+/* line 266, ../_sass/screen.scss */
 h5 {
   font-size: 1em;
   text-transform: uppercase;
@@ -8261,22 +8265,41 @@ h5 {
   padding-left: 0.25em;
   color: #c4ced5;
 }
-/* line 269, ../_sass/screen.scss */
+/* line 274, ../_sass/screen.scss */
 h5.name a {
   color: #222244;
 }
-/* line 274, ../_sass/screen.scss */
+/* line 279, ../_sass/screen.scss */
 h5.title {
   color: #B4C0C9;
 }
 
-/* line 279, ../_sass/screen.scss */
+/* line 284, ../_sass/screen.scss */
 h6 {
   font-size: 16px;
   color: #c4ced5;
 }
 
-/* line 285, ../_sass/screen.scss */
+/* line 290, ../_sass/screen.scss */
 a:hover {
   text-decoration: none;
+}
+
+/* ================================================================
+   media queries
+   ================================================================ */
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 768px) {
+  /* line 304, ../_sass/screen.scss */
+  .post p {
+    width: 90%;
+  }
+}
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (max-width: 991px) {
+  /* line 313, ../_sass/screen.scss */
+  .container-fluid {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
